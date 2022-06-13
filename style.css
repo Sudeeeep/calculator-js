@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
@@ -10,17 +11,37 @@ body {
 
 .main-container {
   height: 90vh;
-  width: 40vw;
-  border: 1px solid;
+  width: 30vw;
+  /* border: 1px solid; */
   margin: auto;
   padding: 1rem;
+  box-shadow: 10px 10px grey;
+  background-color: #202124;
 }
 
-.display {
-  height: 15%;
+.display-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end; */
+  height: auto;
   width: 90%;
   border: 1px solid;
   margin: auto;
+  overflow-wrap: break-word;
+  background-color: #424548;
+  color: white;
+}
+
+.previous-op {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+  direction: rtl;
+}
+
+.current-op {
+  font-size: 30px;
+  direction: rtl;
 }
 
 .grid-container {
@@ -34,8 +55,41 @@ body {
   padding: 1rem;
   text-align: center;
   border: 1px solid;
+  cursor: default;
+  background-color: #94989d;
+  color: white;
 }
 
-.enter {
-  grid-column: 3/5;
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.button {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid;
+  cursor: default;
+  color: white;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.function-btn {
+  background-color: #424548;
+}
+
+.enter-btn,
+.clear-btn {
+  grid-column: span 2;
+}
+
+.enter-btn {
+  background-color: rgb(186, 134, 37);
+}
+
+.display-value {
+  margin: 0;
+  font-size: 35px;
 }
