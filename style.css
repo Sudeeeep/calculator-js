@@ -6,7 +6,17 @@
 }
 
 body {
-  /* background: linear-gradient(to left, #009fff, #ec2f4b); */
+  background: #fc354c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0abfbc,
+    #fc354c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0abfbc,
+    #fc354c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main-container {
@@ -15,16 +25,17 @@ body {
   /* border: 1px solid; */
   margin: auto;
   padding: 1rem;
-  box-shadow: 10px 10px grey;
+  /* box-shadow: 10px 10px grey; */
   background-color: #202124;
 }
 
 .display-container {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: flex-end; */
-  height: auto;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  height: 15%;
   width: 90%;
   border: 1px solid;
   margin: auto;
@@ -36,12 +47,12 @@ body {
 .previous-op {
   font-size: 25px;
   margin-bottom: 0.5em;
-  direction: rtl;
+  /* direction: rtl; */
 }
 
 .current-op {
   font-size: 30px;
-  direction: rtl;
+  /* direction: rtl; */
 }
 
 .grid-container {
@@ -89,7 +100,7 @@ body {
   background-color: rgb(186, 134, 37);
 }
 
-.display-value {
+/* .display-value {
   margin: 0;
   font-size: 35px;
-}
+} */
